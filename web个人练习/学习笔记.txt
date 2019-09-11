@@ -1,6 +1,20 @@
-#前端界面布局的几种方法：
+###前端界面布局的几种方法：
 https://blog.csdn.net/MaYang_/article/details/100620781
 
 
 
 
+###块级框
+关于布局崩坏
+
+
+!!float和position属性
+float和
+
+relative
+
+flaot上下之间：将float集合装入一个div,此新div对于上下不遮盖
+
+
+###bitbug和icon
+<link rel="shortcut icon" href="Benin.ico" />
