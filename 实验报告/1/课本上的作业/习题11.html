@@ -2,8 +2,74 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title>产品订购</title>
+		<style type="text/css">
+			* {
+				padding-top: 1%;
+				margin: auto;
+			}
+
+			table {
+				letter-spacing:5px;
+				padding: 5px;
+				cellpadding: 0;
+				align: center;
+				width: 50%;
+				border-color: #A9A9A9;
+			}
+			input
+			{
+			margin: 1%;	
+				
+			}
+		</style>
 	</head>
 	<body>
+		<table border="2px" bordercolor="black">
+			<tr>
+				<th colspan="6" style="font-size: 50px;">产品订购</th>
+			</tr>
+
+			<tr>
+				<td align="right">姓名:</td>
+				<td colspan="2"><input align="left" type="text"></input></td>
+				<td align="left">产品名称:</td>
+				<td colspan="2"><input align="left" type="text"></input></td>
+			</tr>
+
+			<tr>
+				<td align="right">地区:</td>
+				<td colspan="2"><select align="left" name="rigion">
+						<option>广州</option>
+						<option>山东</option>
+						<option>山西</option>
+					</select></td>
+				<td align="left">付款方式:</td>
+				<td colspan="2"><input align="left" type="radio" name="Payway" >网上</input><input type="radio" name="Payway">邮局</input><input
+					 type="radio" name="Payway">银行</input></td>
+			</tr>
+			<tr>
+				<td align="right">关注产品:</td>				<input type="checkbox" name="pro"  />护肤品
+				<td colspan="6" align="left">
+				<input type="checkbox" name="pro"  />护肤品
+				<input type="checkbox" name="pro"  />化妆品
+				<input type="checkbox" name="pro"  />服装
+				<input type="checkbox" name="pro"  />电器				
+				</td>
+			</tr>
+			<tr>
+				<td align="right">联系电话:</td>
+				<td colspan="6"><input align="left" type="text"></td>
+			</tr>
+			<tr>
+				<td align="right">备注:</td>
+				<td colspan="5"><textarea align="left" rows="10" cols="50"></textarea></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="5" ><input type="submit" ><input type="reset"></td>
+			</tr>
+		</table>
+
 	</body>
 </html>
