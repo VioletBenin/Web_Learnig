@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>立方体旋转模型示例</title>
+		<link type="text/css" rel="stylesheet" href="cube.css">
+
+	</head>
+	<body>
+
+		<div id="destop">
+			<div id="controller">
+				<div class="up">up</div>
+				<div class="middle">middle</div>
+				<div class="down">down</div>
+			</div>
+			<div id="content">
+				<div class="upCube">up</div>
+				<div class="middleCube">middle</div>
+				<div class="downCube">down</div>
+			</div>
+		</div>
+		<script src="jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(".up").click(function() {
+				$("#content").css("transform", "rotateX(-90deg)")
+			})
+			$(".middle").click(function() {
+				$("#content").css("transform", "rotateX(0deg)")
+			})
+			$(".down").click(function() {
+				$("#content").css("transform", "rotateX(90deg)")
+			})
+		</script>
+
+	</body>
+</html>

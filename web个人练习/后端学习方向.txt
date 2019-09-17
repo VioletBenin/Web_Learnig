@@ -1,0 +1,6 @@
+# ajax请求
+#字符串（反）序列化
+#dom树
+#事件
+#按照id找元素
+#cookie&session

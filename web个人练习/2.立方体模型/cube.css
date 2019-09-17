@@ -1,0 +1,102 @@
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+#destop {
+	perspective: 1000px;
+	width: 700px;	
+	display: flex;
+	margin: 150px 0 0 300px;	
+	background-color: #FFFACD;
+}
+
+#controller
+{
+	margin-right: 0;
+}
+
+
+#content
+{	
+	/* position: relative; */
+	transform-style: preserve-3d; 
+	transition: 2s;
+}
+
+
+
+
+.up,
+.middle,
+.down,
+.upCube,
+.middleCube,
+.downCube {
+	width: 300px;
+	margin: 10px;
+	font: 20px;
+	color: white;
+	text-align: center;
+}
+
+.up,
+.middle,
+.down {
+	height: 100px;
+	line-height: 100px;
+}
+
+.upCube,
+.middleCube,
+.downCube {
+	height: 300px;
+	line-height: 300px;
+	position: absolute;
+}
+
+
+
+.up,
+.upCube {
+	background-color: aquamarine;
+}
+
+.middle,
+.middleCube {
+	background-color: aqua;
+}
+
+.down,
+.downCube {
+	background-color: blueviolet;
+}
+
+.up :hover
+{
+color: yellow;
+}
+
+
+/* transform: rotateZ(-45deg) rotateY(-45deg)  rotateZ(45deg);  */
+
+.upCube
+{
+	transform: rotateX(90deg)   translateY(0px) translateZ(150px) translateX(75px);	
+}
+
+
+.middleCube
+{
+transform: translateX(75px) translateZ(150px);	
+}
+
+.downCube
+{
+	transform: rotateX(-90deg) translateY(0px)  translateZ(150px) translateX(75px)
+}
+
+/* 
+.up: hover ~ .middleCube{
+	transform: rotateZ(-45deg) rotateY(-45deg)  rotateZ(45deg);
+} */

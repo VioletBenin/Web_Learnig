@@ -18,3 +18,9 @@ flaot上下之间：将float集合装入一个div,此新div对于上下不遮盖
 
 ###bitbug和icon
 <link rel="shortcut icon" href="Benin.ico" />
+
+
+
+#CSS选择器
+
+https://baike.baidu.com/item/css%E9%80%89%E6%8B%A9%E5%99%A8/2819686#8

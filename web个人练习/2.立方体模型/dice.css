@@ -1,0 +1,98 @@
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+.destop {
+	height: 700px;
+	width: 1200px;
+	perspective: 1000px;
+	display: flex;
+	margin: 150px 0 0 300px;
+	background-color: #FFFACD;
+	padding: 10px;
+}#FFFACD
+
+.controller,
+.content {
+	margin: 3px;
+	 background-color: white; 
+}
+
+.up,
+.down,
+.left,
+.right,
+.confirm,
+.NULL {
+	width: 100px;
+	margin: 10px;
+	font: 20px;
+	color: white;
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+	background-color: cornflowerblue;
+}
+
+.NULL {
+	/**/ background-color: #FFFACD; 
+}
+
+ .content
+{
+	/* transform: rotateZ(-45deg) rotateY(-45deg)  rotateZ(45deg);  */
+}
+
+.c1,
+.c2,
+.c3,
+.c4,
+.c5,
+.c6 {
+	height: 300px;
+	line-height: 300px;
+	position: absolute;
+
+	width: 300px;
+	margin: 10px;
+	font: 20px;
+	color: white;
+	text-align: center;
+}
+
+
+.c1 {	
+	background-color: #000000;
+	transform: rotateX(90deg)  translateZ(150px) translateX(75px);
+}
+
+.c2 {
+	background-color: #fffffff;
+	transform: translateX(75px) translateZ(150px);
+}
+
+.c3 {
+	background-color: #0000ff;
+	transform: rotateX(-90deg)  translateZ(150px) translateX(75px);
+}
+
+.c4 {
+	background-color: #ffff00;
+	transform: rotateX(180deg) translateZ(300px);
+}
+
+.c5 {
+	background-color: #00ffff;
+	transform: rotateY(90deg) ;
+}
+
+.c6 {
+	background-color: #ff0000;
+	transform: rotateY(-90deg) ;
+}
+
+
+
+
+/* transform: rotateZ(-45deg) rotateY(-45deg)  rotateZ(45deg);  */
