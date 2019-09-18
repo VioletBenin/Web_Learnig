@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>立方体旋转模型示例</title>
+		<link type="text/css" rel="stylesheet" href="css/dice.css">
+		<link rel="shortcut icon" href="Benin.ico" />
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+
+	<body>
+
+		<div id="destop">
+
+			<div class="show">
+				<div id="content">
+					<div class="c1">1</div>
+					<div class="c2">2</div>
+					<div class="c3">3</div>
+					<div class="c4">4</div>
+					<div class="c5">middle</div>
+					<div class="c6">down</div>
+				</div>
+			</div>
+
+			<div class="show">
+				<div class="controller" style="display: flex; margin: 0;">
+					<div>
+						<div class="NULL"></div>
+						<div class="left">left</div>
+						<div class="NULL"></div>
+					</div>
+					<div>
+						<div class="up">up</div>
+						<div class="confirm">reset</div>
+						<div class="down">down</div>
+					</div>
+					<div>
+						<div class="NULL"></div>
+						<div class="right">right</div>
+						<div class="NULL"></div>
+					</div>
+
+				</div>
+
+
+
+
+			</div>
+
+			<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+			<script>
+				$(".left").click(function() {
+					$("#content").css("transform", "rotateY(90deg)")
+				})
+
+				$(".right").click(function() {
+					$("#content").css("transform", "rotateY(-90deg)")
+				})
+
+				$(".up").click(function() {
+					$("#content").css("transform", "rotateX(-90deg)")
+				})
+				$(".confirm").click(function() {
+					$("#content").css("transform", "translateX(300px) ")
+				})
+				$(".down").click(function() {
+					$("#content").css("transform", "rotateX(90deg)")
+				})
+			</script>
+
+	</body>
+
+
+</html>
