@@ -9,6 +9,23 @@
 	<body>
 
 		<div id="destop">
+			<div id="content">
+					<div class="c1">1</div>
+					<div class="c2">2</div>
+					<div class="c3">3</div>
+					<div class="c4">4</div>
+					<div class="c5">5</div>
+					<div class="c6">6</div>
+				</div>
+			
+			
+			
+			
+			<div id="show" >
+				
+			</div>
+			
+			
 			<div id="controller">
 
 				<div class="controller" style="display: flex; margin: 0;">
@@ -30,15 +47,7 @@
 				</div>
 
 			</div>
-			<div id="content">
-				<div class="c1">1</div>
-				<div class="c2">2</div>
-				<div class="c3">3</div>
-				<div class="c4">4</div>
-				<div class="c5">middle</div>
-				<div class="c6">down</div>
-			</div>
-		</div>
+	</div>
 
 		<script src="../jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script>
@@ -53,9 +62,11 @@
 			$(".up").click(function() {
 				$("#content").css("transform", "rotateX(-90deg)")
 			})
+			
 			$(".confirm").click(function() {
-				$("#content").css("transform", "translateX(300px) ")
+				$("#content").css("transform", "rotateX(0deg) ")
 			})
+			
 			$(".down").click(function() {
 				$("#content").css("transform", "rotateX(90deg)")
 			})

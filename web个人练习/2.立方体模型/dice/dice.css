@@ -2,26 +2,20 @@ body {
 	padding: 0px;
 	margin: 0px;
 }
-
 #destop {
 	perspective: 1000px;
-	width: 700px;	
-	display: flex;
-	margin: 150px 0 0 300px;	
-	background-color: #FFFACD;
+	width: 700px;
+	/* display: flex; */
+	margin: 150px 0 0 300px;
+	background-color: #FFFACD;	
 }
+
 
 /* 控制区 */
 
-#controller
-{
+#controller {
 	margin-right: 0;
 }
-
-
-
-
-
 
 .up,
 .down,
@@ -40,8 +34,14 @@ body {
 }
 
 .NULL {
-	background-color: #FFFACD; 
+	background-color: #FFFACD;
 }
+
+/* 控制区 */
+
+/* 展示区 */
+
+
 
 .c1,
 .c2,
@@ -60,80 +60,59 @@ body {
 }
 
 
-/* 控制区 */
 
-/* 展示区 */
+#show
+{
+	transform-style: preserve-3d;
+	
+	height: 400px;
+	width: 400px;
+/* 	background-color: white; */
+
+transform:  translateY(0px) translateZ(0px) translateX(0px);
+}
 
 
-#content
-{	
- position: relative;	/* */
-	transform-style: preserve-3d; 
+
+
+#content {
+	position: relative;
+	transform-style: preserve-3d;
 	transition: 2s;
-	
-	transform: translateX(300px);	
 }
 
-.c1,
-.c2,
-.c3,
-.c4,
-.c5,
-.c6{
-	width: 300px;
-	margin: 10px;
-	font: 20px;
-	color: white;
-	text-align: center;
-	
-	height: 300px;
-	line-height: 300px;
-	position: absolute;
-}
 
 
 /* transform: rotateZ(-45deg) rotateY(-45deg)  rotateZ(45deg);  */
 
-.c1
-{
-		background-color: aquamarine;
-	transform: rotateX(90deg)   translateY(0px) translateZ(150px) translateX(75px);	
+
+.c1 {
+	background-color: aquamarine;
+	transform: rotateX(90deg) translateY(0px) translateZ(150px) translateX(75px);
 }
 
-
-.c2
-{
+.c2 {
 	background-color: blueviolet;
-transform: translateX(75px) translateZ(150px);	
+	transform: translateX(75px) translateZ(150px);
 }
-
-.c3
-{
+.c3 {
 	background-color: aqua;
-	transform: rotateX(-90deg) translateY(0px)  translateZ(150px) translateX(75px);
+	transform: rotateX(-90deg) translateY(0px) translateZ(150px) translateX(75px);
 }
-.c4
-{
+.c4 {
 	background-color: red;
-	transform: rotateY(-90deg)  translateZ(75px) translateX(0px);
+	transform: rotateX(180deg) translateZ(150px) translateX(75px) ;
 }
-
-.c5
-{
+.c5 {
 	background-color: darkkhaki;
-	transform: rotateX(90deg) translateY(0px)  translateZ(150px) translateX(75px);
+	transform: rotateY(90deg) translateY(0px) translateZ(225px) translateX(0px);
 }
 
-.c6
-{
+.c6 {
 	background-color: mediumvioletred;
-	transform: rotateX(-90deg) translateY(0px)  translateZ(150px) translateX(75px);
-}
+	transform: rotateY(-90deg) translateY(0px) translateZ(75px) translateX(0px);
+} 
+
 
 /* 展示区 */
 
-
-/* 
-.up: hover ~ .middleCube{
-	transform: rotateZ(-45deg) rotateY(-45deg)  rotateZ(45deg);
-} */
