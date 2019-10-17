@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	<script type="text/javascript" src="my-js.js" ></script> 
+	<style type="text/css">
+			select,textarea,input{
+				margin: 5px;
+			}
+		</style>
+		<title></title>
+	</head>
+	<body >
+
+	<div id="p"> </div>
+		<h1>请注册</h1>
+		
+		<form action="#" onsubmit="#" method="post">
+			
+			用户名:  <input type="text" name="用户名" id="user" value="" class="must" onfocusout="inputLengthTest(this,3,8)" />2-10位<br />
+			口令:    <input type="text" name="口令"class="must" onfocusout="inputLengthTest(this,3,8)" />2-8位，不能与用户名相同<br />
+			确认口令:<input type="text" name="确认口令" class="must" onfocusout="passwordTest(this)"/><br />
+			生日:    <input type="text" name="生日" class="must" onfocusout="dateTest(this)" />格式为1988-1-1<br />
+
+			学历：    
+			<input type="radio" name="学历" name="college" />专科
+			<input type="radio" name="学历" name="bachelor" />本科
+			<input type="radio" name="学历" name="master" />硕士研究生
+			<br />
+			地区：    
+			<select class="must2" name="地区">
+				<option value="">东北</option>
+				<option value="">西北</option>
+			</select>
+			<br />
+
+			备注：
+			<textarea rows="10px" cols="40px">
+
+		</textarea>
+			<br />
+
+			<input type="reset" name="" id="" value="重置" onclick="f1()">
+			<input type="button" name="" id="" value="提交并进行checkbox测试" onclick="$submitTest()">
+			<input type="button" name="" id="" value="select测试" onclick=" $isNumber() ">
+
+		</form>
+		
+		
+		
+		
+
+		
+	</body>
+</html>

@@ -1,0 +1,21 @@
+.all {
+	margin: 10px;
+	background-color: blanchedalmond;
+	width: 100px;
+	height: 30px;
+}
+
+#container {	
+	padding-top: 10px;
+	padding-bottom: 10px; 
+	background-color: #6D6D72;
+	width: 120px;
+}
+
+#banner {
+	margin-top: 0;
+}
+#footer {
+	margin-bottom: 0;
+}
+

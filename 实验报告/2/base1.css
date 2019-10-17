@@ -1,0 +1,42 @@
+* {
+	margin: 10px;
+	padding: 0;
+}
+#c1,
+#c2,
+#c3 {
+	width: 1000px;
+}
+#c1 {
+	height: 50px;
+	background: #0000FF;
+}
+#c2 {
+	height: 80px;
+	background: #00FF00;
+}
+#c3 {
+	height: 400px;
+	background: #FF0000;
+}
+
+#c4,
+#c5 {		
+	position: relative;
+}
+
+#c4 {
+	height: 300px;
+	width: 200px;
+	top:100px;
+	background: #FF00FF;
+	right: 10px;
+}
+
+#c5 {
+		height: 200px;
+	width: 200px;
+	bottom:110px;
+	left: 790px;
+	background: #FFFF00;
+}
