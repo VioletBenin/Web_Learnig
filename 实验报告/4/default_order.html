@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+			}
+			body {
+				width: 800px;
+				/* 整体宽800 */
+			}
+
+			.space {
+				height: 120px;
+				/* space 高120 */
+				background-color: red;
+				flex: initial;
+			}
+			
+		/* 	.space div{
+				float:left;
+			}
+ */
+			.leftDiv {
+				float: left;
+			}
+
+			.aside,
+			.notice,
+			.links,
+			.asideImg {
+				width: 186px;
+
+				/* background-color: yellow; */
+				/* aside宽186	 */
+			}
+
+			.notice {
+				height: 182px;
+				background-color: blue;
+				/* notice 186 182 */
+			}
+
+			.links {
+				height: 146px;
+				background-color: orange;
+
+			}
+
+			.asideImg {
+				background-color: purple;
+				height: 248px;
+			}
+
+			.mainContent {
+				float: left;
+				margin-left: 186;
+				
+				width: 614px;
+				height: 576px; 
+
+				/* position: absolute;
+				left: 186px;
+				top: 120px; */
+			}
+
+			.mainContent p {
+				/* border: 1px solid #000000; */
+				/* width: 614px; */
+				margin: 15px;
+
+			}
+
+			.footer .up {
+				height: 18px;
+				background-color: #000000;
+			}
+
+			.footer {
+				clear: both;
+			}
+
+			.footer .down {
+
+				background-color: #2AC845;
+				/* footer下 100 */
+				height: 100px;
+			}
+
+			.down font {
+				font-size: xx-small;
+				text-align: center;
+				align-content: center;
+
+			}
+input
+{
+	margin: 5px;
+	}
+
+
+			.logo img {}
+		</style>
+	</head>
+	<body>
+
+		<div class="space">
+			<!--
+				<div class="logo"><img src="实验四材料/images/maintop001.gif" width="20%" height="20%"></div>
+			<div id="nav">首 页 | 公司简介 | 新闻中心 | 产品展示 | 新品推荐 | 合作伙伴 | 网上订单 | 人才招聘 | 联系我们</div>
+			<img src="实验四材料/images/main_banner_r3_c1.jpg" name="banner" width="50%" height="50%"s style="inline-block; margin:5px;">
+  -->
+		</div>
+
+		<div class="leftDiv">
+
+			<div class="notice">
+				<marquee scrollamount="3" direction="down">
+					<font style="background-color: orange;">
+						<pre>
+					本公司将一如即往，服务好新老客户，为客户提供最优价产品，欢迎联系我们！
+					热线：0755-83155222
+					传真：0755-83155366
+					电邮：dulonglp@vip.163.com
+					QQ:59223322   228238633
+					</pre>
+					</font>
+				</marquee>
+			</div>
+			<div class="links"></div>
+			<div class="asideImg"></div>
+			<!-- <div class="aside"></div> -->
+		</div>
+
+		<div class="mainContent">
+			<!-- CSS样式：margin-left实现 -->
+
+
+
+
+			<script type="text/javascript" src="submit_order.js"> </script>
+			<div id="order" style="margin: 20px;">
+				<div id="order_title">
+					<img src="images/newtoptb006.gif">
+				</div>
+				<div id="order_ad">
+					<img src="images/newp006.jpg">
+				</div>
+				<form src="output.html" onsubmit="return check()" action="output.html" target="iframe">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td class="label">订购产品：</td>
+							<td class="element"><input name="product" id="product" size="26" maxlength="36" /></td>
+						</tr>
+						<tr>
+							<td class="label">订购数量：</td>
+							<td class="element"><input name="account" id="account" size="6" maxlength="30" /></td>
+						</tr>
+						<tr>
+							<td class="label">订购公司：</td>
+							<td class="element"><input name="company" id="company" size="30" maxlength="36" /></td>
+						</tr>
+						<tr>
+							<td class="label">联系人：</td>
+							<td class="element"><input name="name" id="name" size="30" maxlength="36" /></td>
+						</tr>
+						<tr>
+							<td class="label">联系电话：</td>
+							<td class="element"><input name="tel" id="tel" size="18" maxlength="36" /></td>
+						</tr>
+						<tr>
+							<td class="label">联系传真：</td>
+							<td class="element"><input name="fax" id="fax" size="16" maxlength="36" /></td>
+						</tr>
+						<tr>
+							<td class="label">E-mail：</td>
+							<td class="element"><input name="email" id="email" size="16" maxlength="36" /></td>
+						</tr>
+						<tr>
+							<td class="label" valign="top">备注：</td>
+							<td class="element"><textarea name="message" id="message" cols="45" row="10"></textarea></td>
+						</tr>
+						<tr>
+							<td class="label">&nbsp;</td>
+							<td class="element">
+								<input type="submit" name="cmdOk" value="提交订单" onsubmit="loadXMLDoc()" />
+								<input type="reset" name="cmdReset" value="重写" />
+							</td>
+						</tr>
+					</table>
+				</form>
+
+
+
+
+			</div>
+
+
+		</div>
+		<div class="footer">
+			<div class="up"></div>
+			<div class="down">
+
+				<font>版权所有：深圳市都龙实业发展有限公司　网站备案编号: 粤ICP备05054648号　服务热线：0755-83155222 传真：0755-83155366</font>
+				<br />
+				<font>E-mail:dulonglp@vip.163.com</font>
+			</div>
+		</div>
+
+
+	</body>
+</html>

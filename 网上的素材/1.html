@@ -1,0 +1,31 @@
+
+<html>
+<head>
+<title>Main</title>
+<style type="text/css">
+.chatbar {
+   width: 650px;
+}
+</style>
+<script type="text/javascript">
+function clearField() {
+   if(document.getElementById) {
+      document.chatform.reset();
+   }
+}
+</script>
+</head>
+<body>
+<center>
+<br><br><br>
+<!-- target:指定框架 -->
+<form name="chatform" id="chatform" method="POST" target="chat" action="chat.php" onSubmit="clearField();">
+<input type="text" id="message" name="message" value="" class="chatbar">
+<input type="submit" name="submit" value="Send Message">
+</form>
+<br><br>
+<iframe class="chat" name="chat" width="800px" height="500px" src="chat.php" align=center frameborder=10> </iframe>
+</center>
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+<!-- selectTest.html -->
+<html>
+	<head>
+		<script type="text/javascript" src="selectTest.js">			
+		</script>
+		<style type="text/css">
+			form {
+				display: inline-flex;
+			}
+		</style>
+	</head>
+	<body onload="init()">
+		<form>
+			<select id="mySelect1" size='8' multiple='multiple' style="width:100px"></select>					
+			<div style="padding: 20px;">
+				<input type="button" onclick="AddToRight()" value=">"><br><br>
+				<input type="button" onclick="AddAllToRight()" value=">>"><br><br>
+				<input type="button" onclick="init()" value="O"><br><br>				
+				<input type="button" onclick="AddToLeft()" value="<"><br><br>
+				<input type="button" onclick="AddAllToLeft()" value="<<"><br><br>
+			</div>
+			<select id="mySelect2" size='8' multiple='multiple' style="width:100px"></select>			
+		</form>
+	</body>
+</html>

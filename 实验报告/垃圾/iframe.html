@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	
+	//有两个按钮分别响应两个事件，用来控制iframe显示的网页。
+	<script type="text/javascript">
+	function changeImg()
+	{ 
+	  var fr_doc = document.getElementById("myframe").contentWindow.document; 
+	  fr_doc.getElementById("myimg").src="images/beijing_dl.jpg"; 
+	  //两种访问iframe对象中的元素的方法 
+	  //document.getElementById("myframe").contentWindow.document.getElementById("myimg").src="images/beijing_dl.jpg"; 
+	  //document.frames["myframe"].document.getElementById("myimg").src="images/beijing_dl.jpg"; 
+	} 
+	</script>
+
+	
+	
+	
+	
+	
+	<iframe id="myframe" src="http://www.baidu.com" width="50%" height="50%" align="center" style="margin-top:50px;" scrolling="no" frameborder="0"> 
+	</iframe>
+	 
+	 
+	 
+	
+	
+	
+	<a href="javascript:void(0)"target="domain">暂无产品</a> 
+
+	</body>
+</html>
